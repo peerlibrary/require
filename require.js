@@ -82,7 +82,6 @@
         }
         var module = get(name || Random.id());
         if (_.has(module, 'body')) {
-            console.log('WARNING: module `' + name + '` already defined');
             return;
         }
         module.deps = deps;
