@@ -48,6 +48,7 @@ require = function (listOrName, body) {
 }
 
 require.onModuleNotFound = manager.onModuleNotFound;
+require.onModuleAlreadyDefined = manager.onModuleAlreadyDefined;
 
 define = function (name, deps, body) {
   if (arguments.length == 2) {
@@ -57,4 +58,5 @@ define = function (name, deps, body) {
 }
 
 define.onModuleNotFound = manager.onModuleNotFound;
+define.onModuleAlreadyDefined = manager.onModuleAlreadyDefined;
 define.amd = true;

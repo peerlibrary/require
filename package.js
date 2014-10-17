@@ -1,7 +1,7 @@
 
 Package.describe({
   summary: "A simple tool to define/require modules with dependencies",
-  version: "0.10.0",
+  version: "0.11.0",
   name: "mrt:define",
   git: "https://github.com/apendua/require.git"
 });
@@ -11,7 +11,7 @@ Package.on_use(function (api) {
     api.versionsFrom("METEOR@0.9.0");
   }
 
-  api.use(['deps', 'underscore', 'amd:manager@0.0.5'], ['client', 'server']);
+  api.use(['deps', 'underscore', 'amd:manager@0.1.0'], ['client', 'server']);
   
   api.add_files([
 
@@ -28,7 +28,7 @@ Package.on_use(function (api) {
 
 Package.on_test(function (api) {
   // ENVIRONMENT
-  api.use(['amd:manager@0.0.5', 'tinytest'], ['client', 'server']);
+  api.use(['amd:manager@0.1.0', 'tinytest'], ['client', 'server']);
 
   // TESTS
   api.add_files([
